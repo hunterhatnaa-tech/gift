@@ -5,52 +5,52 @@ const tracks = [
     {
         title: "Never Let Go",
         artist: "LNGSHOT",
-        src: "./public/LNGSHOT-NeverLetGo.mp3",
+        src: "./LNGSHOT-NeverLetGo.mp3",
     },
     {
         title: "Love Yourself",
         artist: "Justin Bieber",
-        src: "./public/JustinBieber-LoveYourself.mp3",
+        src: "./JustinBieber-LoveYourself.mp3",
     },
     {
         title: "Treat You Better",
         artist: "Shawn Mendes",
-        src: "./public/ShawnMendes-TreatYouBetter.mp3",
+        src: "./ShawnMendes-TreatYouBetter.mp3",
     },
     {
         title: "Moonstruck",
         artist: "ENHYPEN",
-        src: "./public/ENHYPEN-Moonstruck.mp3",
+        src: "./ENHYPEN-Moonstruck.mp3",
     },
     {
         title: "Dandelions (Cover)",
         artist: "Ruth B.",
-        src: "./public/dandelions.mp3",
+        src: "./dandelions.mp3",
     },
     {
         title: "Butter",
         artist: "BTS",
-        src: "./public/BTS-Butter.mp3",
+        src: "./BTS-Butter.mp3",
     },
     {
         title: "That Should Be Me",
         artist: "Justin Bieber",
-        src: "./public/JustinBieber-ThatShouldBeMe.mp3",
+        src: "./JustinBieber-ThatShouldBeMe.mp3",
     },
     {
         title: "Stitches",
         artist: "Shawn Mendes",
-        src: "./public/ShawnMendes-Stitches.mp3",
+        src: "./ShawnMendes-Stitches.mp3",
     },
     {
         title: "Shout Out",
         artist: "ENHYPEN",
-        src: "./public/ENHYPEN-ShoutOut.mp3",
+        src: "./ENHYPEN-ShoutOut.mp3",
     },
     {
         title: "Mercy",
         artist: "Shawn Mendes",
-        src: "./public/ShawnMendes-Mercy.mp3",
+        src: "./ShawnMendes-Mercy.mp3",
     },
 ];
 
