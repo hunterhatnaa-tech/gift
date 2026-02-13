@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  height: 200px;
+  width: 300px;
+  background-color: #F2BED1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  transition: transform 0.75s linear;
+}
+
+.lid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid transparent;
+  transform-origin: top;
+  transition: transform 0.25s linear;
+}
+
+/* Lid when closed */
+.lid.one {
+  border-top: 100px solid #F2BED1;
+  transform: rotateX(0deg);
+  z-index: 3;
+  transition-delay: 0.75s;
+}
+
+/* Lid when opened */
+.lid.two {
+  border-top: 100px solid #F2BED1;
+  transform: rotateX(90deg);
+  z-index: 1;
+  transition-delay: 0.5s;
+}
+
+.envelope {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 100px solid transparent;
+  border-right: 150px solid #F8E8EE;
+  border-bottom: 100px solid #F8E8EE;
+  border-left: 150px solid #FDCEDF;
+  z-index: 3;
+}
+
+.letter {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 60%;
+  background-color: white;
+  border-radius: 15px;
+  z-index: 2;
+  transition: all 0.5s;
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+.letter p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #3B4049;
+}
+
+.wrapper.open {
+    transform: translateY(120px);
+}
+
+.wrapper.open .lid.one {
+    transform: rotateX(90deg);
+    transition-delay: 0s;
+}
+
+.wrapper.open .lid.two {
+    transform: rotateX(180deg);
+    transition-delay: 0.25s;
+}
+
+.wrapper.open .letter {
+    height: 315px;
+    transform: translateY(-215px);
+    transition-delay: 0.75s;
+}
+
+.particle {
+    z-index: 5;
+}
