@@ -29,7 +29,7 @@ export default function Heart() {
 
     return (
         <>
-            {state === "explode" && <Confetti className="particle" mode="boom" shapeSize={15} y={0.5} particleCount={1000} colors={['#ff577f', '#ff884b']}/>}
+            {state === "explode" && <Confetti className="particle" mode="boom" shapeSize={15} y={0.4} particleCount={1000} colors={['#ff577f', '#ff884b']}/>}
             <div className={`heart ${state}`} style={{"--color":colors[Math.min(i, colors.length - 1)]}} onClick={handleClick}/>
         </>
     )
