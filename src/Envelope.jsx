@@ -14,7 +14,9 @@ export default function Envelope() {
             <div className={`wrapper ${isOpen ? "open" : "close"}`} onClick={()=>setIsOpen(!isOpen)}>
                 <div className="lid one"></div>
                 <div className="lid two"></div>
-                <div className="envelope"></div>
+                <div className="envelope">
+                    <h6>To Namuun</h6>
+                </div>
                 <div className="letter">
                     <p>Сайн уу!</p>
                     <p>Энэ хариу захидлын очих өдрийн мэндийг хүргэе 😁</p>

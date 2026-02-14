@@ -46,7 +46,7 @@
 }
 
 .envelope {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   top: 0;
@@ -77,6 +77,14 @@
   margin-top: 5px;
   font-size: 10px;
   color: #3B4049;
+}
+
+.envelope h6 {
+    position: absolute;
+    transform: translateY(330%) translateX(260%);
+    right: 0;
+    bottom: 0;
+    margin: 0;
 }
 
 .wrapper.open {

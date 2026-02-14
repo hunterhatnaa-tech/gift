@@ -1,4 +1,5 @@
 .heart {
+    position: relative;
     --color: red;
     margin-top: 50px;
     height: 200px; /* adjust to control the size */
@@ -8,7 +9,18 @@
     mask-border: var(--_m);
     clip-path: polygon(-41% 0,50% 91%, 141% 0);
     background: var(--color);
+    box-shadow: 0 0 50px var(--color);
     z-index: 10;
+}
+
+h3{
+    --color: grey;
+    color: var(--color);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 @supports not (-webkit-mask-box-image: var(--_m)) { 
