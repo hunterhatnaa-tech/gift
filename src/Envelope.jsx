@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Confetti from 'react-confetti-boom';
 import "./Envelope.css";
+import Heart from './Heart.jsx';
 import TrackPlayer from './TrackPlayer.jsx';
 
 export default function Envelope() {
@@ -9,7 +10,7 @@ export default function Envelope() {
     return (
         <div id="wrapper">
             {isOpen && <Confetti className="particle" mode="boom" shapeSize={25} y={0.5} particleCount={500} colors={['#ff577f', '#ff884b']}/>}
-            <div className="heart"></div>
+            <Heart />
             <div className={`wrapper ${isOpen ? "open" : "close"}`} onClick={()=>setIsOpen(!isOpen)}>
                 <div className="lid one"></div>
                 <div className="lid two"></div>
