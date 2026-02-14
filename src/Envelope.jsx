@@ -7,8 +7,9 @@ export default function Envelope() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <body>
+        <div id="wrapper">
             {isOpen && <Confetti className="particle" mode="boom" shapeSize={25} y={0.5} particleCount={500} colors={['#ff577f', '#ff884b']}/>}
+            <div className="heart"></div>
             <div className={`wrapper ${isOpen ? "open" : "close"}`} onClick={()=>setIsOpen(!isOpen)}>
                 <div className="lid one"></div>
                 <div className="lid two"></div>
@@ -24,7 +25,7 @@ export default function Envelope() {
                 </div>
             </div>
             <TrackPlayer/>
-        </body>
+        </div>
     );
 }
 
